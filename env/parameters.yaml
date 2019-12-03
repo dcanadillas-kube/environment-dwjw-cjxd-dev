@@ -1,0 +1,10 @@
+adminUser:
+  password: vault:dwjw-cjxd/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: dcanadillas@cloudbees.com
+  token: vault:dwjw-cjxd/pipelineUser:token
+  username: dcanadillas-kubecd
+prow:
+  hmacToken: vault:dwjw-cjxd/prow:hmacToken

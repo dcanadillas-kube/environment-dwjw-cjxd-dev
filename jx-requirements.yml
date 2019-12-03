@@ -1,38 +1,77 @@
 autoUpdate:
   enabled: false
   schedule: ""
+bootConfigURL: https://github.com/cloudbees/cloudbees-jenkins-x-boot-config.git
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: true
-  project: ""
   azure: {}
+  clusterName: dwjw-cjxd
+  environmentGitOwner: dcanadillas-kube
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: emea-sa-demo
   provider: gke
-  zone: ""
-gitops: true
+  registry: gcr.io
+  zone: europe-west1-c
 environments:
-  - key: dev
-  - key: staging
-  - key: production
+- ingress:
+    cloud_dns_secret_name: external-dns-gcp-sa
+    domain: dwjw.dcanadillas.com
+    externalDNS: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+gitops: true
 ingress:
-  domain: ""
-  externalDNS: false
+  cloud_dns_secret_name: external-dns-gcp-sa
+  domain: dwjw.dcanadillas.com
+  externalDNS: true
+  namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: vault
 storage:
+  backup:
+    enabled: false
+    url: ""
   logs:
     enabled: true
-    url: ""
+    url: gs://dwjw-dcanadillas
   reports:
     enabled: true
-    url: ""
+    url: gs://dwjw-dcanadillas
   repository:
     enabled: true
-    url: ""
+    url: gs://dwjw-dcanadillas
+vault: {}
+velero: {}
 versionStream:
   ref: 2.0.1005+cjxd.5
   url: https://github.com/cloudbees/cloudbees-jenkins-x-versions.git
