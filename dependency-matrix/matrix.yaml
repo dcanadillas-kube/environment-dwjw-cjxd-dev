@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: dcanadillas-kube
+  repo: dwjw-lisbon-go
+  url: https://github.com/dcanadillas-kube/dwjw-lisbon-go.git
+  version: ""
+  versionURL: ""
