@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: dcanadillas
+    provider: github
+    repository: petclinic-dwjw
+  name: dcanadillas-petclinic-dwjw
+spec:
+  description: Imported application for dcanadillas/petclinic-dwjw
+  httpCloneURL: https://github.com/dcanadillas/petclinic-dwjw.git
+  org: dcanadillas
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: petclinic-dwjw
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/dcanadillas/petclinic-dwjw.git
