@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/dcanadillas/petclinic-dwjw.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: dcanadillas
+  repo: webapp-test
+  url: https://github.com/dcanadillas/webapp-test.git
+  version: ""
+  versionURL: ""

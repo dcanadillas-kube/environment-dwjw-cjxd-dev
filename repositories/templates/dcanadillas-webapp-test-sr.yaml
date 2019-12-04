@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: dcanadillas
+    provider: github
+    repository: webapp-test
+  name: dcanadillas-webapp-test
+spec:
+  description: Imported application for dcanadillas/webapp-test
+  httpCloneURL: https://github.com/dcanadillas/webapp-test.git
+  org: dcanadillas
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: webapp-test
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/dcanadillas/webapp-test.git
