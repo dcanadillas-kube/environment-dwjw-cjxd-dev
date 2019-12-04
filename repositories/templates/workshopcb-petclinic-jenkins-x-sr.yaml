@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: WorkshopCB
+    provider: github
+    repository: petclinic-jenkins-x
+  name: workshopcb-petclinic-jenkins-x
+spec:
+  description: Imported application for WorkshopCB/petclinic-jenkins-x
+  httpCloneURL: https://github.com/WorkshopCB/petclinic-jenkins-x.git
+  org: WorkshopCB
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: petclinic-jenkins-x
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/WorkshopCB/petclinic-jenkins-x.git
