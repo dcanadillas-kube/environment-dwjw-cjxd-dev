@@ -17,3 +17,9 @@ dependencies:
   url: https://github.com/dcanadillas/webapp-test.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: WorkshopCB
+  repo: petclinic-jenkins-x
+  url: https://github.com/WorkshopCB/petclinic-jenkins-x.git
+  version: ""
+  versionURL: ""
